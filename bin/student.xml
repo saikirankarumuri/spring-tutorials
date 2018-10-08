@@ -1,0 +1,28 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   
+    <bean id="studentinfo" class="com.sai.spring.StudentInfo">
+   	<property name="city" value="hyderbad"></property>
+   	<property name="state" value="Telangana"></property>
+   	<property name="zipCode" value="501505"></property>
+   
+   </bean>
+   
+   
+   <bean id="student1" class="com.sai.spring.Student" init-method="myinIt" destroy-method="mydestroy">
+   	<property name="id" value="102"></property>
+   	<property name="fname" value="kiran"></property>
+   	<property name="lname" value="irumurak"></property>
+   	<property name="student" ref="studentinfo"></property>
+   	<constructor-arg></constructor-arg>
+   
+   </bean>
+   
+   
+   
+</beans> 
