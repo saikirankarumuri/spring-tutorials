@@ -17,7 +17,7 @@
    <bean id="student1" class="com.sai.spring.Student" init-method="myinIt" destroy-method="mydestroy">
    	<property name="id" value="102"></property>
    	<property name="fname" value="kiran"></property>
-   	<property name="lname" value="new chnage"></property>
+   	<property name="lname" value="ne"></property>
    	<property name="student" ref="studentinfo"></property>
    	<constructor-arg></constructor-arg>
    
